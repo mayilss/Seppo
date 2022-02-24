@@ -1,0 +1,40 @@
+header {
+    background-color: $black;
+    height: 77px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    .myNavbar {
+        width: 1450px;
+        margin: 0 auto;
+        height: 77px;
+        background-color: $black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            height: 50px;
+            width: 88px;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 972px;
+            .nav-item {
+                a {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    transition: 0.3s ease;
+                    font-family: "Rubik", sans-serif;
+                    &:hover {
+                        color: $light_green;
+                    }
+                }
+            }
+        }
+    }
+}
