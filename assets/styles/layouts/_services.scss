@@ -1,78 +1,84 @@
 .services-section{
     height: calc(100vh + 130px);
-    background-color: $black;
-    .service-title-holder{
-        @include titleHolder;
-    }
-    .services-section-content-wrapper{
-        height: 100vh;
-        width: 100%;
-        @include flex_center;
-        .services-section-content{
-            width: 1170px;
-            height: 100%;
-            @include flex_center;
-            .services-section-item{
-                .service-number{
-                    font-size: 264px;
-                    font-weight: 700;
-                    color: $black;
-                    text-shadow: -1px 0 $light_gray, 0 1px $light_gray, 1px 0 $light_gray, 0 -1px $light_gray;
-                    line-height: 100%;
-                    height: 165px;
-                    overflow: hidden;
-                    margin-bottom: -10px;
-                }
-                h4{
-                    font-size: 46px;
-                    color: $white;
-                    font-weight: 700;
-                    line-height: 110%;
-                    padding: 20px 0;
-                }
-                .service-text{
-                    font-size: 18px;
-                    color: $light_gray;
-                    margin-bottom: 13px;
-                }
-                .services-item-button-holder{
-                    margin-top: 50px;
-                    a{
-                        font-size: 16px;
-                        color: $white;
-                        position: relative;
-                        &:before{
-                            content: "";
-                            width: 40px;
-                            height: 40px;
-                            border: 2px solid #fff;
-                            background: transparent;
-                            border-radius: 50%;
-                            top: -7px;
-                            position: absolute;
-                            transition: .3s;
-                        }
-                        span{
-                            transition: .3s;
-                            display: inline-block;
-                            margin: 0px 0px 0px 50px;
-                            letter-spacing: 2px;
-                        }
-                        &:hover{
-                            &:before{
-                                width: 130px;
-                                border-radius: 40px;
-                            }
-                            span{
-                                transform: translateX(-10px);
-                            }
-                        }
-                        
-                        
+    background-color: $black;  
+}
+.service-title-holder{
+    @include titleHolder;
+}
 
-                    }
-                }
+.services-section-content-wrapper{
+    height: 100vh;
+    width: 100%;
+    @include flex_center;
+    
+}
+
+.services-section-content{
+    width: 1170px;
+    height: 100%;
+    @include flex_center;
+    flex-wrap: wrap;
+   
+}
+
+.service-number{
+    font-size: 264px;
+    font-weight: 700;
+    color: $black;
+    text-shadow: -1px 0 $light_gray, 0 1px $light_gray, 1px 0 $light_gray, 0 -1px $light_gray;
+    line-height: 100%;
+    height: 165px;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+h4{
+    font-size: 46px;
+    color: $white;
+    font-weight: 700;
+    line-height: 110%;
+    padding: 20px 0;
+}
+.service-text{
+    font-size: 18px;
+    color: $light_gray;
+    margin-bottom: 13px;
+}
+
+
+.services-item-button-holder{
+    margin-top: 50px;
+    a{
+        font-size: 16px;
+        color: $white;
+        position: relative;
+        &:before{
+            content: "";
+            width: 40px;
+            height: 40px;
+            border: 2px solid #fff;
+            background: transparent;
+            border-radius: 50%;
+            top: -7px;
+            position: absolute;
+            transition: .3s;
+        }
+        span{
+            transition: .3s;
+            display: inline-block;
+            margin: 0px 0px 0px 50px;
+            letter-spacing: 2px;
+        }
+        &:hover{
+            &:before{
+                width: 130px;
+                border-radius: 40px;
+            }
+            span{
+                transform: translateX(-10px);
             }
         }
+        
+        
+
     }
 }

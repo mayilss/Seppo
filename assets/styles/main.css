@@ -270,7 +270,7 @@ header .myNavbar .navbar-nav .nav-item a:hover {
   background-color: #060606;
 }
 
-.services-section .service-title-holder {
+.service-title-holder {
   position: relative;
   width: 285px;
   height: 130px;
@@ -286,7 +286,7 @@ header .myNavbar .navbar-nav .nav-item a:hover {
           align-items: center;
 }
 
-.services-section .service-title-holder:after {
+.service-title-holder:after {
   content: "";
   width: 0;
   height: 0;
@@ -300,14 +300,14 @@ header .myNavbar .navbar-nav .nav-item a:hover {
           transform: translateX(100%);
 }
 
-.services-section .service-title-holder h3 {
+.service-title-holder h3 {
   color: #ffffff;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 35px;
 }
 
-.services-section .services-section-content-wrapper {
+.services-section-content-wrapper {
   height: 100vh;
   width: 100%;
   display: -webkit-box;
@@ -321,7 +321,7 @@ header .myNavbar .navbar-nav .nav-item a:hover {
           align-items: center;
 }
 
-.services-section .services-section-content-wrapper .services-section-content {
+.services-section-content {
   width: 1170px;
   height: 100%;
   display: -webkit-box;
@@ -333,9 +333,11 @@ header .myNavbar .navbar-nav .nav-item a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .service-number {
+.service-number {
   font-size: 264px;
   font-weight: 700;
   color: #060606;
@@ -346,7 +348,7 @@ header .myNavbar .navbar-nav .nav-item a:hover {
   margin-bottom: -10px;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item h4 {
+h4 {
   font-size: 46px;
   color: #ffffff;
   font-weight: 700;
@@ -354,23 +356,23 @@ header .myNavbar .navbar-nav .nav-item a:hover {
   padding: 20px 0;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .service-text {
+.service-text {
   font-size: 18px;
   color: #b3b3b3;
   margin-bottom: 13px;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .services-item-button-holder {
+.services-item-button-holder {
   margin-top: 50px;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .services-item-button-holder a {
+.services-item-button-holder a {
   font-size: 16px;
   color: #ffffff;
   position: relative;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .services-item-button-holder a:before {
+.services-item-button-holder a:before {
   content: "";
   width: 40px;
   height: 40px;
@@ -383,7 +385,7 @@ header .myNavbar .navbar-nav .nav-item a:hover {
   transition: .3s;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .services-item-button-holder a span {
+.services-item-button-holder a span {
   -webkit-transition: .3s;
   transition: .3s;
   display: inline-block;
@@ -391,12 +393,12 @@ header .myNavbar .navbar-nav .nav-item a:hover {
   letter-spacing: 2px;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .services-item-button-holder a:hover:before {
+.services-item-button-holder a:hover:before {
   width: 130px;
   border-radius: 40px;
 }
 
-.services-section .services-section-content-wrapper .services-section-content .services-section-item .services-item-button-holder a:hover span {
+.services-item-button-holder a:hover span {
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
 }
