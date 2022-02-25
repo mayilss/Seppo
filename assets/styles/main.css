@@ -163,8 +163,6 @@ header {
 
 header .myNavbar {
   width: 100%;
-  padding: 0px 35px;
-  margin: 0 auto;
   height: 77px;
   background-color: #060606;
   display: -webkit-box;
@@ -322,9 +320,8 @@ header .myNavbar .navbar-nav .nav-item a:hover {
 }
 
 .services-section {
-  height: auto;
   background-color: #060606;
-  padding-bottom: 100px;
+  padding: 0 0 100px 0;
 }
 
 .service-title-holder {
@@ -365,8 +362,6 @@ header .myNavbar .navbar-nav .nav-item a:hover {
 }
 
 .services-section-content-wrapper {
-  height: auto;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,20 +374,15 @@ header .myNavbar .navbar-nav .nav-item a:hover {
 }
 
 .services-section-content {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.services-section-item {
-  padding: 0 50px;
 }
 
 .service-number {
@@ -439,13 +429,13 @@ h4 {
   border-radius: 50%;
   top: -7px;
   position: absolute;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .services-item-button-holder a span {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   display: inline-block;
   margin: 0px 0px 0px 50px;
   letter-spacing: 2px;
@@ -463,6 +453,16 @@ h4 {
 
 @media screen and (max-width: 992px) {
   .services-section-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-section-content h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  .services-section-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,11 +476,7 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
-  }
-  .services-section-content h1 {
     text-align: center;
-    font-size: 60px;
   }
 }
 
@@ -519,6 +515,12 @@ h4 {
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 35px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  .service-text {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
