@@ -321,7 +321,7 @@ header .myNavbar .navbar-nav .nav-item a:hover {
 
 .services-section {
   background-color: #060606;
-  padding: 0 0 100px 0;
+  padding: 0 0 150px 0;
 }
 
 .service-title-holder {
@@ -522,5 +522,108 @@ h4 {
   .service-text {
     font-size: 14px;
   }
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.about-title-holder {
+  position: relative;
+  width: 285px;
+  height: 130px;
+  background-color: #47ea4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-title-holder:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 130px 60px 0px 0px;
+  border-color: #47ea4e transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.about-title-holder h3 {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+.services-section-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.about-section-description {
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.about-section-title {
+  font-size: 60px;
+  color: #060606;
+  font-weight: 700;
+  padding: 20px 0 35px;
+}
+
+.about-section-text {
+  font-size: 18px;
+  color: #b3b3b3;
+  padding: 0 0 13px;
+}
+
+.about-section-button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #47ea4e;
+  text-align: left;
+  padding: 10px 40px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  margin-bottom: 17px;
+  border: 2px solid #47ea4e;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  margin: 30px 0 17px;
+}
+
+.about-section-button:hover {
+  background: transparent;
+  color: #47ea4e;
+}
+
+.about-section-img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

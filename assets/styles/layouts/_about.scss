@@ -1,0 +1,35 @@
+.about-section {
+    background-color: $white;
+    padding: 0;
+}
+.about-title-holder{
+    @include titleHolder;
+}
+.services-section-content-wrapper{
+    @include flex_center;
+    column-gap: 40px;
+}
+.about-section-description{
+    color: $light_gray;
+    font-size: 16px;
+}
+.about-section-title{
+    font-size: 60px;
+    color: $black;
+    font-weight: 700;
+    padding: 20px 0 35px;
+}
+.about-section-text{
+    font-size: 18px;
+    color: $light_gray;
+    padding: 0 0 13px;
+}
+.about-section-button{
+    @include button;
+    margin: 30px 0 17px;
+}
+.about-section-img{
+    // position: sticky;
+    // top: 0;
+    max-width: 100%;
+}
