@@ -33,3 +33,28 @@
     // top: 0;
     max-width: 100%;
 }
+
+@media screen and (max-width: 992px) {
+    .about-title-holder {
+        @include titleHolder;
+        width: 70%;
+    }
+    .services-section-content-wrapper{
+        flex-direction: column;
+    }
+    .about-section-content{
+        @include flex_center;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .about-section-img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-section-title{
+        font-size: 40px;
+    }
+}
