@@ -5,28 +5,25 @@
     background-repeat: no-repeat;
     background-position-y: top;
     height: 100vh;
-    // padding: 187px 450px 186px 0;
-    // @include flex_center;
     display: flex;
     align-items: center;
-    .home-section-content-wrapper {
-        width: 100%;
-        padding-left: 200px;
-        h1 {
-            font-size: 80px;
-            color: $white;
-            font-weight: 750;
-            font-family: "Rubik", sans-serif;
-            line-height: 120%;
-            margin-bottom: 40px;
-            padding: 20px 0px;
-        }
-        a {
-            @include button;
-        }
+}
+.home-section-content-wrapper {
+    width: 100%;
+    padding-left: 200px;
+    h1 {
+        font-size: 80px;
+        color: $white;
+        font-weight: 750;
+        font-family: "Rubik", sans-serif;
+        line-height: 120%;
+        margin-bottom: 40px;
+        padding: 20px 0px;
+    }
+    a {
+        @include button;
     }
 }
-
 
 
 @media screen and (max-width: 992px) {

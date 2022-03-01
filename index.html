@@ -5,26 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <!-- fonts -->
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap"
             rel="stylesheet"
         />
-        <!-- CSS only -->
+        <!-- Bootstrap -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
-        <!-- JavaScript Bundle with Popper -->
-        <script
+        <script defer
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
         ></script>
+        
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="./assets/styles/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/styles/owl-carousel/owl.theme.default.min.css">
+        <script defer src="./assets/javascript/owl.carousel.min.js"></script>
+        <!-- Main CSS -->
         <link rel="stylesheet" href="./assets/styles/main.css" />
     </head>
     <body>
@@ -39,7 +44,7 @@
                             <a href="#services">Services</a>
                         </li>
                         <li class="nav-item"><a href="#about">About</a></li>
-                        <li class="nav-item"><a href="">Clients</a></li>
+                        <li class="nav-item"><a href="#clients">Clients</a></li>
                         <li class="nav-item"><a href="">News</a></li>
                         <li class="nav-item"><a href="">Portfolio</a></li>
                         <li class="nav-item"><a href="">Pricing</a></li>
@@ -127,5 +132,70 @@
                 </div>
             </div>
         </section>
+        <!-- Clients Section -->
+        <section id="clients" class="clients-section container-fluid">
+            <div class="owl-carousel owl-theme">
+                <div class="clients-section-content-wrapper container item">
+                    <div class="clients-section-content container-fluid">
+                        <img class="clients-section-quote-img" src="./assets/images/quotes_image.png" alt="">
+                        <div class="clients-section-text">
+                            <p>
+                                Suspendisse enim erat, vehicula sit amet odio eu, congue gravida magna mauris a ex aliquam, ornare tortor sit amet, placerat ante aenean sit amet sem et metus elementum pellentesque.
+                            </p>
+                        </div>
+                        <div class="clients-section-client-info-wrapper">
+                            <div>
+                                <img class="clients-section-client-img" src="./assets/images/quote_image_02.jpg" alt="">
+                            </div>
+                            <div class="clients-section-client-info">
+                                <p class="clients-section-client-name">Peter Hall</p>
+                                <p class="clients-section-client-position">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients-section-content-wrapper container item"><div class="clients-section-content container-fluid">
+                    <img class="clients-section-quote-img" src="./assets/images/quotes_image.png" alt="">
+                    <div class="clients-section-text">
+                        <p>  
+                            Curabitur cursus mattis ligula a maximus pellentesque in purus malesuada, pharetra eros id, malesuada diam vivamus eu gravida lacus nulla at consectetur quam vestibulum ac arcu sed.
+                        </p>
+                    </div>
+                    <div class="clients-section-client-info-wrapper">
+                        <div>
+                            <img class="clients-section-client-img" src="./assets/images/quote_image_03.jpg" alt="">
+                        </div>
+                        <div class="clients-section-client-info">
+                            <p class="clients-section-client-name">Jane Williams</p>
+                            <p class="clients-section-client-position">DESIGNER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="clients-section-content-wrapper container item"><div class="clients-section-content container-fluid">
+                    <img class="clients-section-quote-img" src="./assets/images/quotes_image.png" alt="">
+                    <div class="clients-section-text">
+                        <p>
+                            Vivamus quis ante varius, pretium lectus ut, tempor eros maecenas vitae purus lobortis, pulvinar lorem eu, porta elit suspendisse blandit porta magna, nec scelerisque urna viverra lorem gravida.
+                        </p>
+                    </div>
+                    <div class="clients-section-client-info-wrapper">
+                        <div>
+                            <img class="clients-section-client-img" src="./assets/images/quote_image_04.jpg" alt="">
+                        </div>
+                        <div class="clients-section-client-info">
+                            <p class="clients-section-client-name">John Smith</p>
+                            <p class="clients-section-client-position">GURU</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/javascript/clients-carousel.js"></script>
     </body>
 </html>
