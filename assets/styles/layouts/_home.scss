@@ -1,8 +1,6 @@
 .home-section {
     background-image: url(../../assets/images/home_image_01.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include bgImg;
     background-position-y: top;
     height: 100vh;
     display: flex;

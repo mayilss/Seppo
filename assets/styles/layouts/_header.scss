@@ -58,7 +58,7 @@ header {
     flex-direction: column;
     .mid-stick {
         transform: translateX(7px);
-        transition: 0.3s ease;
+        transition: 0.3s ease-in-out;
     }
 }
 

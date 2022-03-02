@@ -1,8 +1,6 @@
 .clients-section {
     background-image: url(../../assets/images/client_image_01.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include bgImg;
     background-position-y: top;
     padding: 150px 100px;
     @include flex_center;
@@ -14,7 +12,7 @@
     
 }
 .clients-section-content {
-    padding: 100px 0px 100px 100px;
+    padding: 100px;
 }
 .clients-section-quote-img {
     width: 87px !important;
