@@ -23,8 +23,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
-        ></script>
-        
+        ></script>       
         <!-- Owl Carousel -->
         <link rel="stylesheet" href="./assets/styles/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="./assets/styles/owl-carousel/owl.theme.default.min.css">
@@ -33,11 +32,32 @@
         <link rel="stylesheet" href="./assets/styles/main.css" />
     </head>
     <body>
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="#home">Home</a></li>
+                <li class="sidebar-item"><a href="#services">Services</a></li>
+                <li class="sidebar-item"><a href="#about">About</a></li>
+                <li class="sidebar-item"><a href="#clients">Clients</a></li>
+                <li class="sidebar-item"><a href="">News</a></li>
+                <li class="sidebar-item"><a href="">Portfolio</a></li>
+                <li class="sidebar-item"><a href="">Pricing</a></li>
+                <li class="sidebar-item"><a href="">Teams</a></li>
+                <li class="sidebar-item"><a href="">Skills</a></li>
+                <li class="sidebar-item"><a href="">Milestones</a></li>
+                <li class="sidebar-item"><a href="">Contact</a></li>
+            </ul>
+        </div>
         <!-- HEADER -->
         <header class="container-fluid">
             <div>
                 <nav class="myNavbar container-fluid">
                     <img class="logo" src="./assets/images/logo.png" alt="" />
+                    <button class="sidebar-button">
+                        <div class="button-stick"></div>
+                        <div class="button-stick mid-stick"></div>
+                        <div class="button-stick"></div>
+                    </button>
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="#home">Home</a></li>
                         <li class="nav-item">
@@ -73,7 +93,6 @@
             <div class="service-title-holder">
                 <h3>SERVICES</h3>
             </div>
-            <div class="services-section-content-wrapper container">
                 <div class="services-section-content container">
                     <div class="services-section-item col">
                         <p class="service-number">1</p>
@@ -112,7 +131,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- About Section -->
         <section id="about" class="about-section container-fluid">
@@ -197,5 +215,7 @@
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./assets/javascript/clients-carousel.js"></script>
+        <!-- Sidebar JS -->
+        <script src="./assets/javascript/sidebar.js"></script>
     </body>
 </html>

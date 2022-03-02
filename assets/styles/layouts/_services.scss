@@ -5,15 +5,9 @@
 .service-title-holder {
     @include titleHolder;
 }
-
-.services-section-content-wrapper {
-    @include flex_center;
-}
-
 .services-section-content {
     @include flex_center;
 }
-
 .service-number {
     font-size: 264px;
     font-weight: 700;
